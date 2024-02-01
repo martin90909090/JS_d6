@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 6</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="princ_container">
+        <div class="container">
+            <h2>
+                Conversor de monedas Nacional
+            </h2>
+        </div>
+        <div class="child_container">
+            <div class="clp_container">
+                <label for="clp">Pesos CLP</label>
+                <input type="number" id="clp" placeholder="Ingrese el monto en CLP" name="clp">
+            </div>
+            <div class="ext_container">
+                <label for="monedas_ext">Moneda a convertir:</label>
+                <select id="monedas_ext" name="monedas_ext">
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                </select>
+                <button id="btn_convert">Buscar</button>
+                <span id="result">...</span>
+            </div>
+            <div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
